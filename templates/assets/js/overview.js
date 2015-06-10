@@ -1,5 +1,5 @@
 function toggleInstances(group) {
-	$('#' + group).fadeToggle();
+	$('#' + group.replace(/(:|\.|\[|\]|,)/g,"\\$1")).fadeToggle();
 }
 
 var storeprefix = document.location.pathname.replace('index.html','') + 'Overview';
