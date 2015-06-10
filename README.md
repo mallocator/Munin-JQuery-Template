@@ -28,3 +28,10 @@ Munin has the option to be run in CGI mode as well, which allows munin in some c
 Unfortunately this will usually change a number of paths to the resources needed by html files. 
 To make things still work you can use rewrite rules in your web server to redirect requests to the proper resources.
 An example for nginx can be found in this [thread](https://github.com/mallocator/Munin-JQuery-Template/issues/1#issuecomment-25678388).
+
+
+## View configuration overrides 
+
+To enable the link that will show you a current configuration you can link the overrides.js in the munin directory into the  directory of the template:
+
+	ln -s /mnt/munin/munin-overrides.js /var/www/munin/overrides.js
